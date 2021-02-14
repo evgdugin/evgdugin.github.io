@@ -1,19 +1,242 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>evgdugin</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blueprint: On-Scroll Animated Header</title>
+	<meta name="description" content="Blueprint: On-Scroll Animated Header" />
+	<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+
+	<link rel="stylesheet" href="assets/style.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap"
+		rel="stylesheet">
+
+
+	<!-- ? -->
+	<script src="https://kit.fontawesome.com/d21feefdb6.js"></script>
+	<script src="scripts/landing-scripts-btn-burger.js" defer></script>
+	<script src="scripts/landing-scripts-btn-menu.js" defer></script>
+
+	<script src="scripts/landing-scripts-preloader.js" defer></script>
+	<script src="scripts/landing-scripts-slider.js" defer></script>
 </head>
+
 <body>
-    <div class="wrapper">
-        <h1>Hello, world!</h1>
-        <h3>... this my test web page</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores quasi, voluptatum adipisci debitis vitae culpa modi ipsum vel, assumenda vero, odit excepturi accusamus ex ipsam? Optio quo molestiae id.</p>
-        <h3>git add file.html</h3>
-        <h3>git push file.html</h3>
-    </div>
-    
+
+	<!-- preloader -->
+	<div class="landing-scss-menu-legal">
+		<div class="landing-scss-menu-block">
+			<div class="landing-scss-menu-logo-block">
+				<!-- <img src="img/logotype.png" id="id-logo" class="label"> -->
+				<div id="id-logo" class="landing-scss-menu-logo-box-big"><img class="logo__img"
+						src="assets/img/lapa.svg" alt=""></div>
+				<p id="id-namelogo" class="namelogo">dobrodog</p>
+
+			</div>
+			<nav>
+				<ul class="landing-scss-menu-nav-block">
+
+
+					<li><a href="#" class="menu__link" id="id-menu-link">Доставка</a></li>
+					<li><a href="#" class="menu__link" id="id-menu-link">Как это работает</a></li>
+					<li><a href="#" class="menu__link" id="id-menu-link">FAQ</a></li>
+					<li><a href="#" class="menu__link" id="id-menu-link">Контакты</a></li>
+
+				</ul>
+
+			</nav>
+			<div onclick="show('block')" class="cube">
+				<div class="cube__item"></div>
+				<div class="cube__item"></div>
+				<div class="cube__item"></div>
+				<div class="cube__item"></div>
+			</div>
+
+			<!-- Задний прозрачный фон-->
+
+			<div onclick="show('none')" id="wrap"></div>
+
+			<!-- Само окно-->
+			<div id="window" class="slide-bottom bounce-in-right">
+
+				<!-- Картинка крестика-->
+				<button class="close " onclick="show('none')">&#9932;</button>
+				<ul>
+					<li class="link__mobile__menu"><i class="fas fa-viruses"></i><a href="" class="link__mobile">О
+							проекте</a></li>
+					<li class="link__mobile__menu"><i class="fas fa-virus"></i><a href=""
+							class="link__mobile">Онлайн чат</a></li>
+					<li class="link__mobile__menu"><i class="fas fa-head-side-mask"></i><a href=""
+							class="link__mobile">Написать нам</a></li>
+
+
+				</ul>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+	</div>
+	<!-- preloader -->
+
+	<div class="container">
+	<header>
+		<section class="landing-section bg-s1">
+			<div class="landing-block">
+				<div class="grid">
+					<h1 class="section-1-tittlle">
+						Любовь и забота хозяина в одной коробочке специально для тебя
+					</h1>
+					<h3 class="section-1-text">
+						Лучше и полезнее, чем обувь хозяина
+					</h3>
+					<button class="landing-btn-section-1">
+						Заказать
+					</button>
+
+				</div>
+			</div>
+			<img class="landing-section-1-dog" src="assets/img/dog.png" alt="">
+		</section>
+	</header>
+			<!-- section -->
+		
+<main>
+	<!-- section -->
+	<section class="landing-section">
+		<div class="landing-block">
+		
+		</div>
+	</section>
+	<!-- section -->
+	<section class="landing-section bg-sw">
+		<div class="landing-block">
+			
+
+
+				<h2 class="questions__title">Вопросы ит ответы</h2>
+				<div class="landing-faq-block">
+				<ul class="questions__list">
+					<li class="questions__item">
+						<button id="questions__item-button" aria-expanded="false">
+
+							<span class="questions__item-title">А доставка бесплатная?</span>
+							<span class="icon" aria-hidden="true"></span>
+						</button>
+						<div class="questions__text-wrapper">
+							<p>Да, доставка бесплатная для Москвы в пределах МКАД, а также в Северном и Южном
+								Бутово. В другие районы, которые не вошли в этот список, доставка по
+								согласованию с
+								менеджером.
+							</p>
+						</div>
+					</li>
+					<li class="questions__item">
+						<button id="questions__item-button" aria-expanded="false"><span
+								class="questions__item-title">
+								Моей собаке это точно понравится?</span><span class="icon"
+								aria-hidden="true"></span></button>
+						<div class="questions__text-wrapper">
+							<p>Мы гарантируем, что содержимое коробочки обязательно понравится вашему
+								четвероногому
+								другу, это подтверждается не только нашими собственными собаками, но и нашими
+								любимыми покупателями. Если не понравится - звоните.
+							</p>
+						</div>
+					</li>
+					<li class="questions__item">
+						<button id="questions__item-button" aria-expanded="false"><span
+								class="questions__item-title">
+								А это подходит разным породам?</span><span class="icon"
+								aria-hidden="true"></span></button>
+						<div class="questions__text-wrapper">
+							<p>Содержимое коробочки продумано так, что это подойдет как мелким породам,
+								например, джек рассел терьер, так и крупным породам типа овчарки.
+							</p>
+						</div>
+					</li>
+					<li class="questions__item">
+						<button id="questions__item-button" aria-expanded="false"><span
+								class="questions__item-title">
+								Когда оплачивать покупку?</span><span class="icon"
+								aria-hidden="true"></span></button>
+						<div class="questions__text-wrapper">
+							<p>Вы оплачиваете коробочку только после того, как получили её от курьера. Вы ничем
+								не рискуете.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- section -->
+	<section class="landing-section bg-sf">
+		<div class="afooter"></div>
+	</section>
+</main>
+		
+
+
+	
+	
+	<footer>
+		footer
+	</footer>
+</div>
+	<script>
+		const items = document.querySelectorAll(".questions__list button");
+
+		function toggleAccordion() {
+			const itemToggle = this.getAttribute('aria-expanded');
+
+			for (i = 0; i < items.length; i++) {
+				items[i].setAttribute('aria-expanded', 'false');
+			}
+
+			if (itemToggle == 'false') {
+				this.setAttribute('aria-expanded', 'true');
+			}
+		}
+
+		items.forEach(item => item.addEventListener('click', toggleAccordion));
+	</script>
+	<script src="scripts/landing-scripts-menu-2.js"></script>
+	<script src="scripts/landing-scripts-menu-1.js"></script>
+	<a href="https://wa.me/74956655777" id="whatsappWidget" target="_blank" rel="noopener noreferrer">
+		<div class="logo-whasap"></div>
+		<h1 class="whatsapp">написать в whatsapp</h1>
+	</a>
 </body>
+
 </html>

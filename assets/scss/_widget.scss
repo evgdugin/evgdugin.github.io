@@ -1,0 +1,39 @@
+#whatsappWidget {
+    position: fixed;
+    height: 50px;
+    bottom: 35px;
+    left: 25px;
+    z-index: 1000;
+
+    // background-color: #262626;
+    background-color:     #262626cc;
+    display: flex;
+    width: 138px;
+    place-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.logo-whasap {
+    height: 35px;
+    width: 35px;
+    background-color: #5efb7a;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background-image: url(/assets/img/whatsapp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+.whatsapp {
+    color: #eaeaea;
+    font-size: 10px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+
+

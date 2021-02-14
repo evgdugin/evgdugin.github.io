@@ -1,0 +1,2 @@
+
+var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector(".landing-scss-menu-legal"),e=false,a=100;function f(){d();window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"cbp-af-header-shrink")}else{classie.remove(g,"cbp-af-header-shrink")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();

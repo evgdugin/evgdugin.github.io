@@ -1,0 +1,327 @@
+
+
+
+  /* Собственно сам слайдер */
+  .slider{
+    position: relative;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 15px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+/* Заголовок слайда */
+.slideText {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+/* Кружочки */
+.slider-dots {
+    text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+.slider-1,
+.slider-2,
+.slider-3 {
+    width: 300px;
+    height: 350px;
+    background-color: black;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+h3 {
+    padding-top: 20px;
+}
+.prev,
+.next {
+    border: 1px solid #2364d2;
+    width: 45px;
+    height: 45px;
+    padding-left: 20px;
+    padding: 11px;
+    padding-left: 18px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #2364d2;
+  
+}
+
+.next {
+    border-radius: 0px 10px 10px 0px;
+  
+}
+.prev {
+    border-radius: 10px 0px 0px 10px;
+}
+.next:active {
+    border: 1px solid #2e72e7;
+    width: 45px;
+    height: 45px;
+    padding-left: 20px;
+    padding: 11px;
+    padding-left: 18px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #2e72e7;
+}
+
+.prev:active {
+    border: 1px solid #2e72e7;
+    width: 45px;
+    height: 45px;
+    padding-left: 20px;
+    padding: 11px;
+    padding-left: 18px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #2e72e7;
+}
+.btn_go_run{
+    color: #ffffff;
+    background-color: #2364d2;
+    border: 0px;
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 43px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+  }
+  
+
+//@extend
+
+
+.box {
+    max-width: 1250px;
+    margin: 0 auto; 
+}
+
+.box-header{
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+.btn-ups{
+    background-color: #2364d2;
+    padding-bottom: 11px;
+    padding-top: 12px;
+    border-radius: 10px;
+}
+.btn-wd{
+    height: 45px;
+    width: 45px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    cursor: pointer;
+    background-color: white;
+    color: #00c0c7;
+
+}
+.color-h1 {
+    color: rgb(58, 190, 243);
+    font-size: 28px;
+}
+
+.hello {
+    color: rgb(42, 42, 42);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fa-angle-right{
+    font-size: 25px;
+
+}
+
+.fa-angle-left{
+    font-size: 25px;
+}
+
+.box-main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block-items-1,
+.block-items-2,
+.block-items-3{
+    width: 300px;
+    height: 450px;
+    border: 1px solid #ddeefc;
+    border-radius: 4px;
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.img_0001{
+    width: 260px;
+}
+
+//@extend
+.block-items-1 {
+    position: relative;
+  }
+  .block-items-1:hover .block {
+    display: block;
+  }
+  .block-items-2 {
+    position: relative;
+  }
+  .block-items-2:hover .block {
+    display: block;
+  }
+  .block-items-3 {
+    position: relative;
+  }
+  .block-items-3:hover .block {
+    display: block;
+  }
+  // Общий элемент для всех!
+  .block {
+   display: grid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #ddeefc;
+    padding: 5px;
+    display: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    white-space: pre-line;
+  }
+  
+  
+  .slide-in-bck-center {
+      -webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+              animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  
+  /* ----------------------------------------------
+   * Generated by Animista on 2020-3-23 19:16:29
+   * Licensed under FreeBSD License.
+   * See http://animista.net/license for more info. 
+   * w: http://animista.net, t: @cssanimista
+   * ---------------------------------------------- */
+  
+  /**
+   * ----------------------------------------
+   * animation slide-in-bck-center
+   * ----------------------------------------
+   */
+   @-webkit-keyframes slide-in-bck-center {
+      0% {
+        -webkit-transform: translateZ(600px);
+                transform: translateZ(600px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+    @keyframes slide-in-bck-center {
+      0% {
+        -webkit-transform: translateZ(600px);
+                transform: translateZ(600px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+    
+  
