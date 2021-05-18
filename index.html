@@ -1,242 +1,515 @@
-<!DOCTYPE html>
-<html lang="en" class="no-js">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blueprint: On-Scroll Animated Header</title>
-	<meta name="description" content="Blueprint: On-Scroll Animated Header" />
-	<meta name="keywords" content="fixed header, animatied header, javascript, wed design, template, on scroll" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="../favicon.ico">
-
-	<link rel="stylesheet" href="assets/style.css">
-	<link
-		href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap"
-		rel="stylesheet">
-
-
-	<!-- ? -->
-	<script src="https://kit.fontawesome.com/d21feefdb6.js"></script>
-	<script src="scripts/landing-scripts-btn-burger.js" defer></script>
-	<script src="scripts/landing-scripts-btn-menu.js" defer></script>
-
-	<script src="scripts/landing-scripts-preloader.js" defer></script>
-	<script src="scripts/landing-scripts-slider.js" defer></script>
-</head>
-
-<body>
-
-	<!-- preloader -->
-	<div class="landing-scss-menu-legal">
-		<div class="landing-scss-menu-block">
-			<div class="landing-scss-menu-logo-block">
-				<!-- <img src="img/logotype.png" id="id-logo" class="label"> -->
-				<div id="id-logo" class="landing-scss-menu-logo-box-big"><img class="logo__img"
-						src="assets/img/lapa.svg" alt=""></div>
-				<p id="id-namelogo" class="namelogo">dobrodog</p>
-
-			</div>
-			<nav>
-				<ul class="landing-scss-menu-nav-block">
-
-
-					<li><a href="#" class="menu__link" id="id-menu-link">Доставка</a></li>
-					<li><a href="#" class="menu__link" id="id-menu-link">Как это работает</a></li>
-					<li><a href="#" class="menu__link" id="id-menu-link">FAQ</a></li>
-					<li><a href="#" class="menu__link" id="id-menu-link">Контакты</a></li>
-
-				</ul>
-
-			</nav>
-			<div onclick="show('block')" class="cube">
-				<div class="cube__item"></div>
-				<div class="cube__item"></div>
-				<div class="cube__item"></div>
-				<div class="cube__item"></div>
-			</div>
-
-			<!-- Задний прозрачный фон-->
-
-			<div onclick="show('none')" id="wrap"></div>
-
-			<!-- Само окно-->
-			<div id="window" class="slide-bottom bounce-in-right">
-
-				<!-- Картинка крестика-->
-				<button class="close " onclick="show('none')">&#9932;</button>
-				<ul>
-					<li class="link__mobile__menu"><i class="fas fa-viruses"></i><a href="" class="link__mobile">О
-							проекте</a></li>
-					<li class="link__mobile__menu"><i class="fas fa-virus"></i><a href=""
-							class="link__mobile">Онлайн чат</a></li>
-					<li class="link__mobile__menu"><i class="fas fa-head-side-mask"></i><a href=""
-							class="link__mobile">Написать нам</a></li>
-
-
-				</ul>
-
-
-
-			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		</div>
-
-	</div>
-	<!-- preloader -->
-
-	<div class="container">
-	<header>
-		<section class="landing-section bg-s1">
-			<div class="landing-block">
-				<div class="grid">
-					<h1 class="section-1-tittlle">
-						Любовь и забота хозяина в одной коробочке специально для тебя
-					</h1>
-					<h3 class="section-1-text">
-						Лучше и полезнее, чем обувь хозяина
-					</h3>
-					<button class="landing-btn-section-1">
-						Заказать
-					</button>
-
-				</div>
-			</div>
-			<img class="landing-section-1-dog" src="assets/img/dog.png" alt="">
-		</section>
-	</header>
-			<!-- section -->
-		
-<main>
-	<!-- section -->
-	<section class="landing-section">
-		<div class="landing-block">
-		
-		</div>
-	</section>
-	<!-- section -->
-	<section class="landing-section bg-sw">
-		<div class="landing-block">
-			
-
-
-				<h2 class="questions__title">Вопросы ит ответы</h2>
-				<div class="landing-faq-block">
-				<ul class="questions__list">
-					<li class="questions__item">
-						<button id="questions__item-button" aria-expanded="false">
-
-							<span class="questions__item-title">А доставка бесплатная?</span>
-							<span class="icon" aria-hidden="true"></span>
-						</button>
-						<div class="questions__text-wrapper">
-							<p>Да, доставка бесплатная для Москвы в пределах МКАД, а также в Северном и Южном
-								Бутово. В другие районы, которые не вошли в этот список, доставка по
-								согласованию с
-								менеджером.
-							</p>
-						</div>
-					</li>
-					<li class="questions__item">
-						<button id="questions__item-button" aria-expanded="false"><span
-								class="questions__item-title">
-								Моей собаке это точно понравится?</span><span class="icon"
-								aria-hidden="true"></span></button>
-						<div class="questions__text-wrapper">
-							<p>Мы гарантируем, что содержимое коробочки обязательно понравится вашему
-								четвероногому
-								другу, это подтверждается не только нашими собственными собаками, но и нашими
-								любимыми покупателями. Если не понравится - звоните.
-							</p>
-						</div>
-					</li>
-					<li class="questions__item">
-						<button id="questions__item-button" aria-expanded="false"><span
-								class="questions__item-title">
-								А это подходит разным породам?</span><span class="icon"
-								aria-hidden="true"></span></button>
-						<div class="questions__text-wrapper">
-							<p>Содержимое коробочки продумано так, что это подойдет как мелким породам,
-								например, джек рассел терьер, так и крупным породам типа овчарки.
-							</p>
-						</div>
-					</li>
-					<li class="questions__item">
-						<button id="questions__item-button" aria-expanded="false"><span
-								class="questions__item-title">
-								Когда оплачивать покупку?</span><span class="icon"
-								aria-hidden="true"></span></button>
-						<div class="questions__text-wrapper">
-							<p>Вы оплачиваете коробочку только после того, как получили её от курьера. Вы ничем
-								не рискуете.
-							</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-	<!-- section -->
-	<section class="landing-section bg-sf">
-		<div class="afooter"></div>
-	</section>
-</main>
-		
-
-
-	
-	
-	<footer>
-		footer
-	</footer>
-</div>
-	<script>
-		const items = document.querySelectorAll(".questions__list button");
-
-		function toggleAccordion() {
-			const itemToggle = this.getAttribute('aria-expanded');
-
-			for (i = 0; i < items.length; i++) {
-				items[i].setAttribute('aria-expanded', 'false');
-			}
-
-			if (itemToggle == 'false') {
-				this.setAttribute('aria-expanded', 'true');
-			}
+<html lang="ru"><head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="https://www.avito.ru/favicon.ico">
+	<title>Бронирование отелей | Авито и OneTwoTrip</title>
+	<meta name="description" content="Бронирование отелей по выгодным ценам. Большой выбор гостиниц и хостелов по всей России с фото и отзывами гостей.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<style>
+	  @keyframes skeleton-loading {
+		30% {
+		  opacity: 1
 		}
-
-		items.forEach(item => item.addEventListener('click', toggleAccordion));
-	</script>
-	<script src="scripts/landing-scripts-menu-2.js"></script>
-	<script src="scripts/landing-scripts-menu-1.js"></script>
-	<a href="https://wa.me/74956655777" id="whatsappWidget" target="_blank" rel="noopener noreferrer">
-		<div class="logo-whasap"></div>
-		<h1 class="whatsapp">написать в whatsapp</h1>
-	</a>
-</body>
-
-</html>
+  
+		to {
+		  opacity: .3
+		}
+	  }
+  
+	  html, body {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	  }
+  
+	  .container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+	  }
+  
+	  body[data-active-page="index"] .bg {
+		position: absolute;
+		width: 1730px;
+		height: 872px;
+		background: url('https://static.onetwotrip.com/images/partners/avito/hotel_bg_fin.jpg') center top no-repeat;
+		background-size: 1730px 872px;
+		left: 50%;
+		margin-left: -853px;
+		top: -216px;
+	  }
+  
+	  .wrapper {
+		position: relative;
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		overflow: hidden;
+	  }
+  
+	  body[data-active-page="index"] .header {
+		background: transparent;
+	  }
+  
+	  .header {
+		position: relative;
+		width: 100%;
+		height: 100px;
+		background: white;
+		overflow: hidden;
+	  }
+  
+	  .header-container {
+		position: relative;
+		width: 100%;
+		max-width: 1084px;
+		padding: 0 16px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	  }
+  
+	  body[data-active-page="index"] .logo {
+		background-image: url('https://static.onetwotrip.com/images/partners/avito/logo.svg');
+		margin-top: 36px;
+	  }
+  
+	  .logo {
+		width: 107px;
+		height: 30px;
+		background-image: url('https://static.onetwotrip.com/images/partners/avito/logo-black.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-top: 32px;
+		cursor: pointer;
+	  }
+  
+	  .footer {
+		position: relative;
+		background-color: #f5f5f5;
+		border-top: 1px solid #E1E3E6;
+		text-align: left;
+	  }
+  
+	  .footer-container {
+		position: relative;
+		width: 100%;
+		max-width: 1084px;
+		padding: 26px 16px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	  }
+  
+	  .footer-logo {
+		width: 154px;
+		height: 44px;
+		background: url('https://static.onetwotrip.com/images/partners/avito/logo-black.svg') center no-repeat;
+		background-size: contain;
+	  }
+  
+	  .footer-info-container {
+		max-width: 697px;
+	  }
+  
+	  .footer-contacts {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	  }
+  
+	  .footer-phones p {
+		font-size: 16px;
+		line-height: 1.5;
+		color: #858585;
+		margin: 8px 0 14px 0;
+	  }
+  
+	  .footer-phones a {
+		display: block;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1.4;
+		color: #000000 !important;
+		text-decoration: none !important;
+		margin-bottom: 16px;
+	  }
+  
+	  .footer-support {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: flex-start;
+	  }
+  
+	  .ott-logo {
+		margin-right: 22px;
+	  }
+  
+	  .footer-support-container {
+		margin-right: 22px;
+	  }
+  
+	  .footer-support-container a {
+		display: inline-block;
+		margin-top: 4px;
+		padding: 8px 16px;
+		border-radius: 3px;
+		border: solid 1px #cccccc;
+		background-color: #ffffff;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #000000 !important;
+		text-decoration: none !important;
+	  }
+  
+	  .footer-support-container a:hover {
+		background-color: #e0e0e0;
+	  }
+  
+	  .footer-links {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+		border-top: 1px solid #cccccc;
+		margin-top: 16px;
+		padding-top: 24px;
+	  }
+  
+	  .footer-links a {
+		display: block;
+		width: 188px;
+		font-size: 16px;
+		line-height: 1.5;
+		color: #858585 !important;
+		text-decoration: none !important;
+	  }
+  
+	  .footer-links a:hover {
+		color: #ff6163 !important;
+	  }
+  
+	  .content {
+		width: 100%;
+		height: 2px;
+		opacity: 0;
+		overflow: hidden;
+	  }
+  
+	  .skeleton-container {
+		position: relative;
+		width: 100%;
+	  }
+  
+	  .skeleton {
+		animation-name: skeleton-loading;
+		animation-duration: 1.5s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		background: #ebebeb;
+	  }
+  
+	  .skeleton-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 1084px;
+		padding: 0 16px;
+		margin: 0 auto;
+		box-sizing: border-box;
+	  }
+  
+	  .skeleton1 {
+		max-width: 685px;
+		height: 18px;
+		margin: 122px auto 0;
+	  }
+  
+	  .skeleton2 {
+		width: 100%;
+		height: 50px;
+		margin: 36px 0 160px;
+	  }
+  
+	  .skeleton-bottom {
+		background: white;
+	  }
+  
+	  body[data-ifrfame-auth="true"] .skeleton-discount {
+		width: 100%;
+		height: 86px;
+	  }
+  
+	  .skeleton-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		max-width: 965px;
+		margin: 0 auto;
+		padding-bottom: 60px;
+	  }
+  
+	  .skeleton-icon {
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		margin: 87px auto 0;
+	  }
+  
+	  .skeleton3 {
+		width: 107px;
+		height: 14px;
+		margin: 23px auto 0;
+	  }
+  
+	  .skeleton4 {
+		width: 185px;
+		height: 10px;
+		margin: 16px auto 0;
+	  }
+  
+	  .skeleton5 {
+		width: 251px;
+		height: 10px;
+		margin: 9px auto 0;
+	  }
+  
+	  .skeleton6 {
+		width: 139px;
+		height: 10px;
+		margin: 9px auto 0;
+	  }
+  
+	  body[data-ifrfame-ready="true"] .content {
+		position: relative;
+		height: auto;
+		opacity: 1;
+	  }
+  
+	  body[data-ifrfame-ready="true"] .skeleton-container {
+		display: none;
+	  }
+  
+	  @media (min-width: 1680px) {
+		body[data-active-page="index"] .bg {
+		  left: 0;
+		  margin-left: 0;
+		  width: 100%;
+		  background-size: cover;
+		  background-position: center;
+		}
+	  }
+  
+	  @media (max-width: 1000px) {
+		.footer-container {
+		  flex-direction: column;
+		  align-items: center;
+		  padding: 40px 0;
+		}
+  
+		.footer-logo {
+		  margin-bottom: 52px;
+		}
+	  }
+  
+	  @media (max-width: 930px) {
+		.skeleton-items {
+		  flex-direction: column;
+		  align-items: center;
+		}
+	  }
+  
+	  @media (max-width: 835px) {
+		body[data-active-page="index"] .bg {
+		  background-size: 1260px;
+		  top: -50px;
+		}
+  
+		.header {
+		  height: 80px;
+		}
+  
+		body[data-active-page="index"] .logo,
+		.logo {
+		  margin: 20px auto 0;
+		  width: 128px;
+		  height: 36px;
+		  background-size: contain;
+		}
+  
+		.footer {
+		  text-align: center;
+		}
+  
+		.footer-logo {
+		  margin-bottom: 26px;
+		}
+  
+		.footer-contacts {
+		  flex-direction: column;
+		  align-items: center;
+		}
+  
+		.footer-support {
+		  flex-direction: column;
+		  align-items: center;
+		  margin-top: 8px;
+		}
+  
+		.ott-logo,
+		.footer-support-container {
+		  margin-right: 0;
+		}
+  
+		.footer-support-container {
+		  margin-top: 12px;
+		}
+  
+		.footer-links {
+		  flex-direction: column;
+		  align-items: center;
+		  padding: 16px 16px 0;
+		  margin-top: 38px;
+		}
+  
+		.footer-links a {
+		  width: 100%;
+		  margin-top: 16px;
+		}
+	  }
+  
+	  @media (max-width: 775px) {
+		.skeleton1 {
+		  width: 200px;
+		  margin: 45px auto 0;
+		}
+  
+		.skeleton2 {
+		  margin: 82px 0 0px;
+		}
+  
+		.skeleton2-second {
+		  width: 100%;
+		  height: 50px;
+		  margin-top: 16px;
+		}
+  
+		.skeleton-bottom {
+		  margin-top: 73px;
+		}
+  
+		body[data-ifrfame-auth="true"] .skeleton-discount {
+		  height: 156px;
+		}
+	  }
+  
+	  @media (max-width: 620px) {
+		body[data-active-page="index"] .bg {
+		  margin-left: 0;
+		  left: -560px;
+		}
+	  }
+	</style>
+  </head>
+  <body data-active-page="search" data-ifrfame-ready="true">
+  <div class="container" style="">
+	<div class="wrapper">
+	  <div>
+		<div class="bg"></div>
+		<div class="header">
+		  <div class="header-container">
+			<div onclick="handleLogoClick()" class="logo"></div>
+		  </div>
+		</div>
+		<div class="content"><iframe src="https://avito.travel/verticals/hotel/3.14.0/ru.html#/search/+/+?date_end=2021-05-19&amp;date_start=2021-05-18&amp;id=491422&amp;rooms[0]=2&amp;to=Сочи&amp;type=geo" style="position: relative; display: block; width: 100%; height: 3900px; border: 0px; opacity: 1;"></iframe><script src="https://static.onetwotrip.com/gadgets/avito/prod/avito_hotel_avito/5fca0a5e22fc0f43b1b188d7.js?_=1621360209839" async=""></script></div>
+		<div class="skeleton-container">
+		  <div class="skeleton-wrapper">
+			<div class="skeleton skeleton1"></div>
+			<div class="skeleton skeleton2"></div>
+			<div class="skeleton skeleton2-second"></div>
+			<div class="skeleton skeleton2-second"></div>
+			<div class="skeleton skeleton2-second"></div>
+		  </div>
+		  <div class="skeleton-bottom">
+			<div class="skeleton skeleton-discount"></div>
+			<div class="skeleton-wrapper">
+			  <div class="skeleton-items">
+				<div class="skeleton-item">
+				  <div class="skeleton skeleton-icon"></div>
+				  <div class="skeleton skeleton3"></div>
+				  <div class="skeleton skeleton4"></div>
+				  <div class="skeleton skeleton5"></div>
+				  <div class="skeleton skeleton6"></div>
+				</div>
+				<div class="skeleton-item">
+				  <div class="skeleton skeleton-icon"></div>
+				  <div class="skeleton skeleton3"></div>
+				  <div class="skeleton skeleton4"></div>
+				  <div class="skeleton skeleton5"></div>
+				  <div class="skeleton skeleton6"></div>
+				</div>
+				<div class="skeleton-item">
+				  <div class="skeleton skeleton-icon"></div>
+				  <div class="skeleton skeleton3"></div>
+				  <div class="skeleton skeleton4"></div>
+				  <div class="skeleton skeleton5"></div>
+				  <div class="skeleton skeleton6"></div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer">
+		<div class="footer-container">
+		  <div class="footer-logo"></div>
+		  <div class="footer-info-container">
+			<div class="footer-contacts">
+			  <div class="footer-phones">
+				<p>Телефоны службы поддержки</p>
+				<a rel="nofollow" href="tel:+7 495 646 83 62">+7&nbsp;495&nbsp;646&nbsp;83&nbsp;62</a>
+				<a rel="nofollow" href="tel:+7 981 646 68 81">+7&nbsp;495&nbsp;981&nbsp;68&nbsp;81</a>
+			  </div>
+			  <div class="footer-support">
+				<a class="ott-logo" href="https://www.onetwotrip.com" target="_blank">
+				  <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+					<g fill="none">
+					  <path fill="#f5f5f5" d="M12.582 9.584C13.025 4.22 17.52.002 23 .002c5.48 0 9.975 4.217 10.418 9.582h7.506A5.081 5.081 0 0 1 46 14.667v26.25A5.085 5.085 0 0 1 40.924 46H5.076A5.081 5.081 0 0 1 0 40.917v-26.25a5.085 5.085 0 0 1 5.076-5.083h7.506zm5.617 0h9.602a4.88 4.88 0 0 0-9.602 0z"></path>
+					  <path fill="#000000" d="M29.684 8.23a7.041 7.041 0 0 0-13.616.993.628.628 0 0 1-1.235-.219 8.296 8.296 0 0 1 16.066-1.088l.965-.25-.853 3.047-2.213-2.254.886-.229zM8.4 27.667v15.465H5.566V27.667H2.553v-2.558h8.885v2.558H8.4zm11.403 15.467l-2.353-7.392h-1.596v7.392H13.02V25.11h4.557c3.29 0 4.6 1.594 4.6 5.315 0 2.23-.46 3.823-2.1 4.709l2.693 8.001h-2.967zm-2.201-15.467h-1.748v5.52H17.6c1.518 0 1.745-1.265 1.745-2.76 0-1.495-.23-2.76-1.745-2.76h.002zm6.895-2.558h2.834v18.023h-2.834V25.109zm9.693 10.987h-1.696v7.038H29.66V25.11h4.53c3.267 0 4.633 1.695 4.633 5.467 0 3.646-1.215 5.52-4.633 5.52zm.05-8.43h-1.746v5.873h1.746c1.518 0 1.746-1.341 1.746-2.938 0-1.596-.23-2.937-1.746-2.937v.003zm7.887 15.574a1.762 1.762 0 0 1-1.771-1.771 1.773 1.773 0 1 1 3.544 0 1.762 1.762 0 0 1-1.773 1.771zm-1.341-18.124h2.684v12.96h-2.684v-12.96zM6.684 21.528a2.259 2.259 0 0 1-1.84.796 2.256 2.256 0 0 1-1.84-.796c-.704-.796-.69-2.178-.69-4.037 0-1.858-.014-3.24.69-4.036a2.256 2.256 0 0 1 1.84-.796 2.259 2.259 0 0 1 1.84.796c.704.798.69 2.178.69 4.036 0 1.859.014 3.241-.69 4.037zm-1.116-7.171a.784.784 0 0 0-.717-.36.761.761 0 0 0-.711.36c-.278.46-.331 1.407-.331 3.134 0 1.728.06 2.682.331 3.133.15.242.42.38.704.359a.784.784 0 0 0 .717-.359c.279-.46.32-1.407.32-3.135 0-1.727-.039-2.682-.32-3.135l.007.003zm6.988 7.861l-2.231-5.617v5.617H8.837v-9.455h1.329l2.217 5.616v-5.616h1.488v9.455h-1.315zm2.916 0v-9.455h3.975v1.34H16.96v2.682h2.142v1.344H16.96v2.748h2.486v1.341h-3.974zm10.575-8.114v8.114H24.56v-8.114h-1.58v-1.341h4.662v1.34h-1.593zm10.05 8.114H34.54l-1.354-7.185-1.341 7.185H30.29l-1.792-9.455h1.633l.93 7.171 1.301-7.171h1.647l1.316 7.171.915-7.171h1.633l-1.778 9.455zm6.895-.69a2.505 2.505 0 0 1-3.667 0c-.703-.796-.69-2.178-.69-4.037 0-1.858-.013-3.24.69-4.036a2.507 2.507 0 0 1 3.667 0c.703.796.69 2.178.69 4.036 0 1.859.013 3.241-.69 4.037zm-1.116-7.171a.784.784 0 0 0-.706-.36.761.761 0 0 0-.704.36c-.278.46-.331 1.407-.331 3.134 0 1.728.053 2.682.331 3.135.15.241.421.378.704.357a.784.784 0 0 0 .718-.359c.278-.46.32-1.407.32-3.135 0-1.727-.04-2.682-.32-3.135l-.012.003z"></path>
+					</g>
+				  </svg>
+				</a>
+				<div class="footer-support-container">
+				  <a href="https://support.onetwotrip.com/hc/ru/articles/203380302" target="_blank">Контакты поддержки</a>
+				</div>
+			  </div>
+			</div>
+			<div class="footer-links">
+			  <a href="https://support.onetwotrip.com/hc/ru/articles/360001091360" target="_blank">
+				Пользовательское соглашение
+			  </a>
+			  <a href="https://support.onetwotrip.com/hc/ru/articles/208009765" target="_blank">
+				Политика конфиденциальности
+			  </a>
+			  <a href="https://support.onetwotrip.com/hc/ru/articles/208028745" target="_blank">
+				Политика использования cookie‑файлов
+			  </a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+  <script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=fetch"></script>
+  <script>!function(t){var e={};function n(r){if(e[r])return e[r].exports;var o=e[r]={i:r,l:!1,exports:{}};return t[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=t,n.c=e,n.d=function(t,e,r){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:r})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)n.d(r,o,function(e){return t[e]}.bind(null,o));return r},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="",n(n.s=0)}([function(t,e,n){t.exports=n(1)},function(t,e,n){"use strict";var r=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(t[r]=n[r])}return t},o=n(2);function a(t){document.body.dataset.activePage=t||"index"}var c=o.UrlParamManager.getSearchUrl(),i="5fca0a5e22fc0f43b1b188d7",s="https://static.onetwotrip.com/gadgets/avito/prod/avito_hotel_avito",u=Date.now(),l=document.getElementsByClassName("container")[0],d=document.getElementsByClassName("content")[0],f=document.createElement("script");c.ott_isDraft&&(s=s.replace("/prod/","/draft/")),f.src=s+"/"+i+".js?_="+u,f.async=!0;var v='\n                              <div class="customBlock">\n                                <div class="customBlock-items">\n                                    <div class="customBlock-item">\n                                        <div class="customBlock-icon customBlock-icon1"></div>\n                                        <div class="customBlock-title">Отели на&nbsp;любой вкус</div>\n                                        <div class="customBlock-text">Много вариантов на&nbsp;выбор: сетевые гостиницы, частные отели и&nbsp;хостелы.</div>\n                                    </div>\n                                    <div class="customBlock-item">\n                                        <div class="customBlock-icon customBlock-icon2"></div>\n                                        <div class="customBlock-title">С&nbsp;предоплатой или&nbsp;без</div>\n                                        <div class="customBlock-text">Если планы могут измениться, платите на&nbsp;месте. С&nbsp;предоплатой проживание обойдётся дешевле.</div>\n                                    </div>\n                                    <div class="customBlock-item">\n                                        <div class="customBlock-icon customBlock-icon3"></div>\n                                        <div class="customBlock-title">Круглосуточная поддержка</div>\n                                        <div class="customBlock-text">Мы поможем решить проблемы с&nbsp;заселением или подберём жильё на&nbsp;замену.</div>\n                                    </div>\n                                </div>\n                            </div>',h={nodeToScroll:l,customBannerHTML:v};function m(t){var e=r({},c);delete e.avuser,o.UrlParamManager.replaceHistoryWidthParams(e),h.pathToVersions="https://avito.travel/verticals/hotel",h.referrer="avito",t&&(document.body.dataset.ifrfameAuth="true",h.referrer="avitoauth",h.customBannerHTML='<div class="customBlock-sale"><span>-10%</span> Дополнительная скидка от&nbsp;Авито</div>'+v),c.marker&&(h.referrerMarker=c.marker);var n=[];try{n=JSON.parse(c.rooms||"[]")}catch(t){console.error(t)}c.country&&c.city&&c.cityId&&(h.search={country:c.country,city:c.city,cityId:c.cityId,searchString:decodeURIComponent(c.searchString||""),dateStart:c.dateStart,dateEnd:c.dateEnd,hotelId:c.hotelId,rooms:n}),window["config_"+i]=h,window["gadget_ready_"+i]=function(){var t=window["gadget_"+i];t.on("change_page",(function(t){a(t)})),t.on("iframe_ready",(function(){setTimeout((function(){document.body.dataset.ifrfameReady="true"}),500)})),a(t.getCurrentPage())},d.appendChild(f)}window.handleLogoClick=function(){window["gadget_"+i].reset()},c.avuser?fetch("/_partnership/jwt_auth/auth?reseller=avito&token="+c.avuser).then((function(t){t.json().then((function(t){t.result&&t.result.success?m(!0):m(!1)})).catch((function(){m(!1)}))})).catch((function(){m(!1)})):fetch("/_partnership/auth/profile/getBasicUserInfo").then((function(t){t.json().then((function(t){t.result&&t.result.auth?m(!0):m(!1)})).catch((function(){m(!1)}))})).catch((function(){m(!1)}))},function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0});var r=function(){function t(t,e){for(var n=0;n<e.length;n++){var r=e[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}return function(e,n,r){return n&&t(e.prototype,n),r&&t(e,r),e}}();e.UrlParamManager=function(){function t(e){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t),this.hash=e}return r(t,[{key:"setParam",value:function(e){var n=t.getSearchUrl();n[this.hash]=encodeURIComponent(e),t.replaceHistoryWidthParams(n)}},{key:"getParam",value:function(){var e=t.getSearchUrl();return e[this.hash]?decodeURIComponent(e[this.hash]):""}},{key:"getUrlParamName",value:function(){return this.hash}},{key:"destroy",value:function(){var e=t.getSearchUrl();delete e[this.hash],t.replaceHistoryWidthParams(e)}}],[{key:"getSearchUrl",value:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",e={};try{var n=t||window.location.href,r=n.split("?")[1],o=r?r.split("&"):[];o.forEach((function(t){var n=t.split("=");e[n[0]]=n[1]}))}catch(t){console.error(t),e={}}return e}},{key:"getHrefWithParams",value:function(t){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"",n=[];Object.keys(t).forEach((function(e){n.push(e+"="+t[e])}));var r=n.length?"?"+n.join("&"):"",o=e||window.location.href,a=o.split("?");return a[0]+r}},{key:"replaceHistoryWidthParams",value:function(e){var n=t.getHrefWithParams(e);window.history.replaceState(window.history.state,"",n)}}]),t}()}]);</script>
+  
+  </body></html>
